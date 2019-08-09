@@ -25,7 +25,7 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/predict', methods=['GET', 'POST'])
+@app.route('/predict/', methods=['GET', 'POST'])
 def predict():
     imdata = request.get_data()
     convert_image(imdata)
@@ -35,7 +35,7 @@ def predict():
         proba = torch.exp(out)
         top_p, top_class = proba.topk(1, dim=1)
         value = top_class.item()
-        return value
+        return str(value)
 
 
 if __name__ == '__main_':
