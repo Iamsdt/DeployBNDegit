@@ -1,9 +1,9 @@
 import torch
 import torch.nn as nn
 from PIL import Image
-from torchvision import transforms
 import os
 import sys
+import torchvision.transforms.transforms as tf
 
 sys.path.append(os.path.abspath('model'))
 
@@ -75,8 +75,8 @@ def init():
     model = Net()
 
     path = os.path.join('model', 'model' + "." + 'pt')
-    #print(os.path.basename(path))
-    #print(path)
+    # print(os.path.basename(path))
+    # print(path)
     return load_checkpoint(model, path)
 
 
@@ -120,13 +120,10 @@ def load_checkpoint(model, path):
 def transform(file):
     img = Image.open(file).convert('L')
 
-    mean = [0.485, 0.456, 0.406]
-    std = [0.229, 0.224, 0.225]
-
-    test_transform = transforms.Compose([
-        transforms.Resize(180),
-        transforms.ToTensor(),
-        #transforms.Normalize(mean, std)
+    test_transform = tf.Compose([
+        tf.Resize(180),
+        tf.ToTensor(),
+        # transforms.Normalize(mean, std)
     ])
 
     img = test_transform(img).unsqueeze(0)
