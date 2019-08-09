@@ -120,12 +120,12 @@ def load_checkpoint(_model, path):
 def transform(file):
     img = Image.open(file).convert('L')
     img = img.resize((180, 180), Image.ANTIALIAS)
-    print(type(img))
+    # print(type(img))
     img = np.array(img)
     img = np.broadcast_to(img, (1, 1, 180, 180))
-    print(type(img))
+    # print(type(img))
     img_tensor = torch.from_numpy(img)
-    print(img_tensor.shape)
+    # print(img_tensor.shape)
     return img_tensor.float()
 
 
