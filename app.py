@@ -7,6 +7,9 @@ from PIL import Image
 from flask import Flask, render_template, request
 import torchvision.transforms as tf
 
+from torchvision import _C as C
+
+
 sys.path.append(os.path.abspath('model'))
 sys.path.append(os.path.abspath('templates'))
 
