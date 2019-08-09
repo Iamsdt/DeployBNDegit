@@ -1,1 +1,1 @@
-web: gunicorn deploy:app
+web: gunicorn app:bengali-digit-recognizer
