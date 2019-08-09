@@ -5,10 +5,7 @@ import torch
 import torch.nn as nn
 from PIL import Image
 from flask import Flask, render_template, request
-import torchvision.transforms as tf
-
-from torchvision import _C as C
-
+import numpy as np
 
 sys.path.append(os.path.abspath('model'))
 sys.path.append(os.path.abspath('templates'))
@@ -122,18 +119,14 @@ def load_checkpoint(_model, path):
 
 def transform(file):
     img = Image.open(file).convert('L')
-
-    mean = [0.485, 0.456, 0.406]
-    std = [0.229, 0.224, 0.225]
-
-    test_transform = tf.transforms.Compose([
-        tf.transforms.Resize(180),
-        tf.transforms.ToTensor(),
-        #transforms.Normalize(mean, std)
-    ])
-
-    img = test_transform(img).unsqueeze(0)
-    return img
+    img = img.resize((180, 180), Image.ANTIALIAS)
+    print(type(img))
+    img = np.array(img)
+    img = np.broadcast_to(img, (1, 1, 180, 180))
+    print(type(img))
+    img_tensor = torch.from_numpy(img)
+    print(img_tensor.shape)
+    return img_tensor.float()
 
 
 # init flask app
