@@ -1,7 +1,9 @@
 import base64
+import os
 import sys
+import torch
 from flask import Flask, render_template, request
-from model.load import *
+from Loader import load
 
 sys.path.append(os.path.abspath('model'))
 sys.path.append(os.path.abspath('templates'))
@@ -11,7 +13,7 @@ app = Flask(__name__, template_folder='templates')
 
 global model
 
-model = init()
+model = load.init()
 
 
 def convert_image(x):
@@ -29,7 +31,7 @@ def index():
 def predict():
     imdata = request.get_data()
     convert_image(imdata)
-    x = transform('output.png')
+    x = load.transform('output.png')
     with torch.no_grad():
         out = model(x)
         proba = torch.exp(out)
