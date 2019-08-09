@@ -75,8 +75,8 @@ def init():
     model = Net()
 
     path = os.path.join('model', 'model' + "." + 'pt')
-    print(os.path.basename(path))
-    print(path)
+    #print(os.path.basename(path))
+    #print(path)
     return load_checkpoint(model, path)
 
 
