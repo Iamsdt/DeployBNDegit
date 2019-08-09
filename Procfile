@@ -1,1 +1,1 @@
-web: guicorn deploy:app
+web: gunicorn deploy:app
