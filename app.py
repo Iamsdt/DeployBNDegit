@@ -5,7 +5,7 @@ import torch
 import torch.nn as nn
 from PIL import Image
 from flask import Flask, render_template, request
-from torchvision import transforms
+import torchvision.transforms as tf
 
 sys.path.append(os.path.abspath('model'))
 sys.path.append(os.path.abspath('templates'))
@@ -123,9 +123,9 @@ def transform(file):
     mean = [0.485, 0.456, 0.406]
     std = [0.229, 0.224, 0.225]
 
-    test_transform = transforms.Compose([
-        transforms.Resize(180),
-        transforms.ToTensor(),
+    test_transform = tf.transforms.Compose([
+        tf.transforms.Resize(180),
+        tf.transforms.ToTensor(),
         #transforms.Normalize(mean, std)
     ])
 
