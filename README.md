@@ -45,4 +45,4 @@ Custom CNN model is used
 - Matplotlib
 
 # Schreenshorts
-![First Image](bn1.jpg)
+![First Image](../bn1.jpg)
