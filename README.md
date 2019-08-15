@@ -49,3 +49,13 @@ Custom CNN model is used
 | First Image  | Second Image |
 |---| ---|
 |  ![First Image](https://github.com/Iamsdt/DeployBNDegit/blob/master/img/bn1.png)  | ![Second Image](https://github.com/Iamsdt/DeployBNDegit/blob/master/img/bn2.png) |
+## Credits:
+I have no experience in web design, so I use this website template from
+repo [How to deploy a keras model to production](https://github.com/llSourcell/how_to_deploy_a_keras_model_to_production)
+
+# Develpoer
+**Shudipto Trafder**
+
+Email: [Shudiptotrafder@gmail.com](mailto:shudiptotrafder@gmail.com)
+
+Linkedin: [Shudipto Trafder](https://www.linkedin.com/in/iamsdt/)
