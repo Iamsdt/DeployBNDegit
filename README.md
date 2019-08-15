@@ -45,4 +45,7 @@ Custom CNN model is used
 - Matplotlib
 
 # Schreenshorts
-![First Image](../master/bn1.jpg)
+
+| First Image  | Second Image |
+|---| ---|
+|  ![First Image](https://github.com/Iamsdt/DeployBNDegit/blob/master/img/bn1.png)  | ![Second Image](https://github.com/Iamsdt/DeployBNDegit/blob/master/img/bn2.png) |

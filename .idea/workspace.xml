@@ -12,7 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="1352" />
+    <option name="totalTimeSeconds" value="1793" />
     <option name="gitIntegration" value="true" />
     <option name="naggedAbout" value="1" />
   </component>
@@ -254,7 +254,21 @@
       <option name="project" value="LOCAL" />
       <updated>1565876934206</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="update pic">
+      <created>1565877021909</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1565877021909</updated>
+    </task>
+    <task id="LOCAL-00010" summary="update pic">
+      <created>1565877105500</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1565877105500</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -276,6 +290,7 @@
     <MESSAGE value="add readme" />
     <MESSAGE value="git update" />
     <MESSAGE value="update..." />
-    <option name="LAST_COMMIT_MESSAGE" value="update..." />
+    <MESSAGE value="update pic" />
+    <option name="LAST_COMMIT_MESSAGE" value="update pic" />
   </component>
 </project>
