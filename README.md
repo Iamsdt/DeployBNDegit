@@ -44,6 +44,9 @@ Custom CNN model is used
 - PIL
 - Matplotlib
 
+# Kernel Link
+[BN digit with pytorch](https://www.kaggle.com/iamsdt/bn-digit-with-pytorch)
+
 # Schreenshorts
 
 | First Image  | Second Image |
