@@ -79,6 +79,7 @@ Web App:  [Bengali Digit Recognizer](https://bengali-digit-recognizer.herokuapp.
 ## Credits:
 I have no experience in web design, so I use this website template from
 repo [How to deploy a keras model to production](https://github.com/llSourcell/how_to_deploy_a_keras_model_to_production)
+Author: **Siraj Raval**
 
 # Develpoer
 **Shudipto Trafder**
