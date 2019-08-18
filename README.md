@@ -1,10 +1,6 @@
 # Project: Bengali Digit Recognizer
 A web app where user can draw Bengali digit and the AI model can detect handwritten digit and predict the digit.
 
-User can draw any Bengali digit on the website canvas and able to 
-get the prediction of that Bengali digit. 
-
-
 # Schreenshorts
 | First Image  | Second Image |
 |---| ---|
