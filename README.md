@@ -84,6 +84,8 @@ Author: **Siraj Raval**
 # Develpoer
 **Shudipto Trafder**
 
+**Slack Name:** @Shudipto Trafder
+
 Email: [Shudiptotrafder@gmail.com](mailto:shudiptotrafder@gmail.com)
 
 Linkedin: [Shudipto Trafder](https://www.linkedin.com/in/iamsdt/)
